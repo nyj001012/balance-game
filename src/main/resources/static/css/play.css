@@ -1,0 +1,144 @@
+/**
+ body
+ */
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/**
+ header, content width
+ */
+header, #content {
+    display: flex;
+    justify-content: center;
+}
+
+header > #header-wrapper, #content > #content-wrapper {
+    width: 75vw;
+    max-width: 1600px;
+}
+
+/**
+ header
+ */
+header {
+    background-color: #00081f;
+    color: whitesmoke;
+}
+
+header > #header-wrapper {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > #header-wrapper > #site-title {
+    font-size: 25px;
+}
+
+header > #header-wrapper > #menu-wrapper {
+    display: flex;
+}
+
+header > #header-wrapper > #menu-wrapper > *:not(last-child) {
+    margin-right: 20px;
+}
+
+/**
+ content
+ */
+#content {
+    flex-direction: column;
+    align-items: center;
+}
+
+#content > #content-wrapper {
+    flex-direction: column;
+    margin: 50px 0;
+    font-size: 20px;
+}
+
+#content > #content-wrapper > #question-wrapper {
+    margin-bottom: 30px;
+}
+
+#content > #content-wrapper > #answer-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+
+#content > #content-wrapper > #answer-wrapper > .answer {
+    width: calc(50% - 40px);
+    padding: 15px;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-red {
+    background-color: #e72d2f;
+}
+
+.bg-blue {
+    background-color: #2da2ff;
+}
+
+/**
+ comments
+ */
+#comments {
+    margin-top: 100px;
+}
+
+#comments > #comments-count {
+    margin-bottom: 5px;
+}
+
+#comments > #write-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#comments > #write-wrapper > #write-text {
+    width: calc(100% - 24px); /* 100% - (padding width * 2 + border width) */
+    height: 10vh;
+    padding: 10px;
+}
+
+#comments > #write-wrapper > #write-button {
+    width: 70px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#comments > #comments-wrapper {
+    margin: 15px 0;
+}
+
+#comments > #comments-wrapper > #name {
+    margin-bottom: 10px;
+    color: #777;
+}
+
+/**
+ footer
+ */
+footer {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #eee;
+    color: #aaa;
+    padding: 0 50px;
+}
